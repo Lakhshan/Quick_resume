@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import expandMore from '../imgs/expand-more.png'
 import expandLess from "../imgs/expand-less.png"
+import personal from "../imgs/personal.png"
 
 export  function GeneralInformation({generalInformation, SetGeneralInformation}) {
     const [visible, setVisible]= useState(false);
@@ -43,12 +44,13 @@ export  function GeneralInformation({generalInformation, SetGeneralInformation})
   return (
     <div className='wrapper w-[480px] min-h-[100px] shadow-lg shadow-gray-500 bg-white rounded-lg flex flex-col justify-start gap-4 '>
         <div className="header flex flex-row items-center justify-around mt-6" onClick={toggleForm} >
-            <img className="w-[50px]"  alt='person'/>
+            <img className="w-[50px]" src={personal} alt='person'/>
             <p className='text-lg font-bold'>General Information</p>
             <img
             onClick={toggleForm}
             src={visible? expandLess : expandMore}
             className="expand-icon w-[20px]  cursor-pointer  "
+            alt='Text'
             />  
         </div>
         {visible&&(

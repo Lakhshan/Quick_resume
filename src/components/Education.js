@@ -199,6 +199,7 @@ export function Education({ Education, setEducation }) {
           onClick={toggleForm}
           src={visible ? expandLess : expandMore}
           className="expand-icon w-[20px]  cursor-pointer  "
+          alt="text"
         />
       </div>
       {visible && (

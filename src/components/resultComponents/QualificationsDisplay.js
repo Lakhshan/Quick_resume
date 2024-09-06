@@ -57,7 +57,7 @@ export default function QualificationsDisplay({ Education }) {
       <div className="level mt-2">
         <div className="header flex justify-between">
           <h3 className="font-bold">
-            {Education. Secondary.schoolName}, 
+            {Education.Secondary.schoolName}, 
             {Education.Secondary.schoolCity}
           </h3>
           <h3 className="font-bold">
