@@ -90,38 +90,31 @@ export function Template1() {
     });
   };
   return (
-    <div className="bg-wallpaper flex  m-10 gap-x-14">
+    <div className="bg-wallpaper flex m-10 gap-x-14">
       <Header />
-      <ul className="flex flex-col gap-4">
-        <li>
-          <SaveResume generatePDF={generatePDF}/>
-        </li>
-        <li>
-          <GeneralInformation
-            generalInformation={generalInformation}
-            SetGeneralInformation={SetGeneralInformation}
-          />
-        </li>
-        <li>
-          <EducationComponent
-            Education={Education}
-            setEducation={setEducation}
-          />
-        </li>
-        <li>
-          <Project projectData={projectData} setProjectData={setProjectData} />
-        </li>
-        <li>
-          <CoCurricular Certificate={Certificates} setCertificates={setCertificates} />
-        </li>
-      </ul>
+      <div className="flex flex-col gap-4">
+        <SaveResume generatePDF={generatePDF} />
+        <GeneralInformation
+          generalInformation={generalInformation}
+          SetGeneralInformation={SetGeneralInformation}
+        />
+        <EducationComponent
+          Education={Education}
+          setEducation={setEducation}
+        />
+        <Project projectData={projectData} setProjectData={setProjectData} />
+        <CoCurricular
+          Certificate={Certificates}
+          setCertificates={setCertificates}
+        />
+      </div>
       <div id="displayComponent" className="w-[794px] h-[1123px]">
         <Display
-              generalInformation={generalInformation}
-              Education={Education}
-              projectData={projectData}
-              Certificates ={Certificates}
-            />
+          generalInformation={generalInformation}
+          Education={Education}
+          projectData={projectData}
+          Certificates={Certificates}
+        />
       </div>
     </div>
   );
