@@ -59,14 +59,6 @@ export function Template1() {
       explain_2: "",
       explain_3: "",
     },
-    project_3: {
-      title: "",
-      company: "",
-      startDate: null,
-      explain_1: "",
-      explain_2: "",
-      explain_3: "",
-    },
   });
   const [Certificates, setCertificates]=useState({
       certificate_1_url:null,

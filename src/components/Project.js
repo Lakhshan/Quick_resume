@@ -109,54 +109,6 @@ export function Project({ projectData, setProjectData }) {
                             explain_3: value
                         }
                     };
-                case "projectTitle_3":
-                    return {
-                        ...prevData,
-                        project_3: {
-                            ...prevData.project_3,
-                            title: value,
-                        }
-                    };
-                case "thirdCompany":
-                    return {
-                        ...prevData,
-                        project_3: {
-                            ...prevData.project_3,
-                            company: value
-                        }
-                    };
-                case "startDateProject_3":
-                    return {
-                        ...prevData,
-                        project_3: {
-                            ...prevData.project_3,
-                            startDate: value,
-                        }
-                    };
-                case "description_l1_3":
-                    return {
-                        ...prevData,
-                        project_3: {
-                            ...prevData.project_3,
-                            explain_1: value
-                        }
-                    };
-                case "description_l2_3":
-                    return {
-                        ...prevData,
-                        project_3: {
-                            ...prevData.project_3,
-                            explain_2: value
-                        }
-                    };
-                case "description_l3_3":
-                    return {
-                        ...prevData,
-                        project_3: {
-                            ...prevData.project_3,
-                            explain_3: value
-                        }
-                    };
                 default:
                     return prevData;
             }
@@ -220,27 +172,6 @@ export function Project({ projectData, setProjectData }) {
                         <input type="text" name="description_l3_2" placeholder='Point 3' className='bg-[#eef0f4] px-2 py-2 rounded-md outline-none' onChange={formHandler} />
                     </div>
 
-                    {/* Project-3 */}
-                    <div className='flex flex-col py-1 mt-6'>
-                        <label htmlFor="title_3" className='font-bold opacity-70'>(3) Project/ Job Title</label>
-                        <input type="text" name="projectTitle_3" placeholder='Enter your Project/ Job Title ' id="title_3" className='bg-[#eef0f4] px-2 py-2 rounded-md outline-none' onChange={formHandler} />
-                    </div>
-                    <div className='flex flex-col py-1'>
-                        <label htmlFor="company_3" className='font-bold opacity-70'>Company</label>
-                        <input type="text" name="thirdCompany" placeholder="Enter your Company's name" id="company_3" className='bg-[#eef0f4] px-2 py-2 rounded-md outline-none' onChange={formHandler} />
-                    </div>
-                    <div className="dates flex justify-around">
-                        <div>
-                            <label htmlFor="startDate_3" className='block opacity-70 font-bold'>Month of Project</label>
-                            <input type="date" name="startDateProject_3" id="startDate_3" className='outline py-2 px-2  rounded-md' onChange={formHandler} />
-                        </div>
-                    </div>
-                    <div className='flex flex-col py-1 gap-4'>
-                        <label htmlFor="desc" className='opacity-70 font-bold'>Description <span className='italic text-sm font-normal'>(in bullet points)</span></label>
-                        <input type="text" name="description_l1_3" placeholder='Point 1' className='bg-[#eef0f4] px-2 py-2 rounded-md outline-none' onChange={formHandler} />
-                        <input type="text" name="description_l2_3" placeholder='Point 2' className='bg-[#eef0f4] px-2 py-2 rounded-md outline-none' onChange={formHandler} />
-                        <input type="text" name="description_l3_3" placeholder='Point 3' className='bg-[#eef0f4] px-2 py-2 rounded-md outline-none' onChange={formHandler} />
-                    </div>
                 </div>
             )}
         </div>
